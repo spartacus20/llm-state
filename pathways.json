@@ -1,0 +1,24 @@
+[
+	{
+	  "next": "Tell the user that you're Mary, an AI representative from Bright Horizons Realty and that your mission is to help find the right property for the user."
+	},
+
+	{
+	  "check": "Return yes if the user provided their phone number, otherwise no",
+	  "error": "Bauti will return the call",
+	  "next": "Thank the user for providing their last name and ask them nicely and concise to provide their email address."
+	},
+
+	{
+	  "check": "Return yes if the user provided their email address, otherwise no",
+	  "error": "Create a short and concise answer and tell the user to provide their email address as we cannot continue otherwise.",
+	  "next": "Thank the user and tell them that we have all details and that a represenattive will be in contact with them shortly."
+	},
+
+	{
+	  "next": "Tell the user goodbye and that a representative will call them back as soon as possible.",
+	  "variables" : {
+		"first_name" : "Extract the first name from the message."
+	  }
+	}
+  ]
